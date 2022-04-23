@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/Weather_Station/app/src/main/res/layout/activity_suhu.xml" value="0.3151041666666667" />
+        <entry key="..\:/AndroidStudioProjects/Weather_Station/app/src/main/res/layout/activity_tentang.xml" value="0.3151041666666667" />
         <entry key="..\:/Users/eko/AndroidStudioProjects/WeatherStation/app/src/main/res/drawable/bg_button.xml" value="0.128" />
         <entry key="..\:/Users/eko/AndroidStudioProjects/WeatherStation/app/src/main/res/layout/activity_arah_angin.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/eko/AndroidStudioProjects/WeatherStation/app/src/main/res/layout/activity_kecepatan_angin.xml" value="0.1" />
@@ -17,7 +19,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

@@ -32,16 +32,14 @@ public class MainActivity extends AppCompatActivity {
         btn_suhu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), suhu.class));
-                finish();
+                startActivity(new Intent(getApplicationContext(), SuhuActivity.class));
             }
         });
 
         btn_kelembapan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), kelembapan.class));
-                finish();
+                startActivity(new Intent(getApplicationContext(), KelembapanActivity.class));
             }
         });
 
@@ -49,15 +47,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), kecepatan_angin.class));
-                finish();
             }
         });
 
         btn_arah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), arah_angin.class));
-                finish();
+                startActivity(new Intent(getApplicationContext(), ArahAnginActivity.class));
             }
         });
 
@@ -84,12 +80,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ClickSuhu(View view){
-        redirectActivity(this,suhu.class);
+        redirectActivity(this, SuhuActivity.class);
 
     }
 
     public  void ClickKelembapan(View view){
-        redirectActivity(this,kelembapan.class);
+        redirectActivity(this, KelembapanActivity.class);
 
     }
 
@@ -100,14 +96,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public  void ClickArahAngin(View view){
-        redirectActivity(this,arah_angin.class);
+        redirectActivity(this, ArahAnginActivity.class);
 
 
     }
 
     public  void ClickTentang(View view){
-        redirectActivity(this,tentang.class);
-        finish();
+        redirectActivity(this, TentangActivity.class);
 
     }
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".arah_angin">
+    tools:context=".ArahAnginActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/D_angin2"
