@@ -38,11 +38,12 @@
         android:textStyle="bold" />
 
     <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chartTemp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/chartTemp"
         android:layout_above="@id/btn_bck1"
-        android:layout_below="@id/titleTemp" />
+        android:layout_below="@id/titleTemp"
+        android:layout_marginBottom="16dp" />
 
     <ImageButton
         android:id="@+id/btn_bck1"

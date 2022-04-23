@@ -38,7 +38,7 @@ public class SuhuActivity extends AppCompatActivity {
         values.add(new Entry(12F, 3F));
 
         ShowChart chart = new ShowChart();
-        chart.chart(binding.chartTemp, values, 0, 30);
+        chart.chart(binding.chartTemp, values, 0, 15);
 
 
     }
