@@ -21,12 +21,11 @@ public class SuhuActivity extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
-        binding.btnBck1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onBackPressed();
-            }
-        });
+ //       binding.btnBck1.setOnClickListener(new View.OnClickListener() {//          @Override
+  //          public void onClick(View view) {
+  //              onBackPressed();
+ //           }
+ //       });
 
         binding.btnBck1.setOnClickListener(view1 -> onBackPressed());
 
