@@ -26,15 +26,11 @@ public class SuhuActivity extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
- //       binding.btnBck1.setOnClickListener(new View.OnClickListener() {//          @Override
-  //          public void onClick(View view) {
-  //              onBackPressed();
- //           }
- //       });
+        binding.btnBck1.setOnClickListener(view1 -> {
+            onBackPressed();
+        });
 
-        binding.btnBck1.setOnClickListener(view1 -> onBackPressed());
-
-        FirebaseDatabase.getInstance().getReference("pushData").addValueEventListener(new ValueEventListener() {
+        FirebaseDatabase.getInstance().getReference("monitoring").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 ArrayList<Entry> data = new ArrayList<>();
@@ -46,8 +42,9 @@ public class SuhuActivity extends AppCompatActivity {
                     }
 
                     ShowChart chart = new ShowChart();
-                    chart.chart(binding.chartTemp, data, 0, 15);
+                    chart.chart(binding.chartTemp, data, 0, 120);
                 }
+                binding.chartTemp.invalidate();
             }
 
             @Override

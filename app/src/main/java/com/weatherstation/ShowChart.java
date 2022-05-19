@@ -19,6 +19,7 @@ public class ShowChart {
 
         LineDataSet lineDataSet = new LineDataSet(null, null);
         lineDataSet.setValues(values);
+        lineDataSet.setCubicIntensity(1.5f);
         lineDataSet.setDrawFilled(true);
         lineDataSet.setColor(R.color.black);
         lineDataSet.setLineWidth(2f);
@@ -34,7 +35,7 @@ public class ShowChart {
 //        xAxis.setCenterAxisLabels(true);
 //        xAxis.setTextSize(10f);
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
-        xAxis.setDrawLabels(true);
+        xAxis.setDrawLabels(false);
 
         YAxis yAxisL = lineChart.getAxis(YAxis.AxisDependency.LEFT);
         yAxisL.setDrawGridLines(false);
@@ -46,5 +47,6 @@ public class ShowChart {
         lineChart.getAxisRight().setEnabled(false);
         lineChart.getLegend().setEnabled(false);
         lineChart.getDescription().setEnabled(false);
+        lineChart.moveViewTo(lineData.getEntryCount(), 50L, YAxis.AxisDependency.LEFT);
     }
 }
