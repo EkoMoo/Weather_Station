@@ -8,24 +8,24 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.github.mikephil.charting.data.Entry;
-import com.weatherstation.databinding.ActivityArahAnginBinding;
 import com.weatherstation.databinding.ActivityKecepatanAnginBinding;
+import com.weatherstation.databinding.ActivityKelembapanBinding;
 
 import java.util.ArrayList;
 
-public class ArahAnginActivity extends AppCompatActivity {
+public class KecepatanAnginActivity extends AppCompatActivity {
 
-    private ActivityArahAnginBinding binding;
+    private ActivityKecepatanAnginBinding binding;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityArahAnginBinding.inflate(getLayoutInflater());
+        binding = ActivityKecepatanAnginBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
 
-        binding.btnBck4.setOnClickListener(view1 -> onBackPressed());
+        binding.btnBck3.setOnClickListener(view1 -> onBackPressed());
 
         ArrayList<Entry> values = new ArrayList<>();
         values.add(new Entry(1F, 5F));
@@ -42,8 +42,7 @@ public class ArahAnginActivity extends AppCompatActivity {
         values.add(new Entry(12F, 3F));
 
         ShowChart chart = new ShowChart();
-        chart.chart(binding.chartWindD, values, 0, 15);
-
+        chart.chart(binding.chartWindS, values, 0, 15);
 
     }
 }

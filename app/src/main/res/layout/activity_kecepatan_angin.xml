@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".kecepatan_angin">
+    tools:context=".KecepatanAnginActivity">
 
 
     <androidx.cardview.widget.CardView
@@ -26,6 +26,7 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
+        android:id="@+id/title_WindSpeed"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:text="KECEPATAN ANGIN"
@@ -34,6 +35,14 @@
         android:gravity="center"
         android:layout_marginTop="10dp"
         android:layout_below="@+id/D_angin1"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chartWindS"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_bck3"
+        android:layout_below="@id/title_WindSpeed"
+        android:layout_marginBottom="16dp" />
 
     <ImageButton
         android:id="@+id/btn_bck3"

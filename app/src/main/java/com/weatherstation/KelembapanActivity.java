@@ -7,24 +7,41 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.github.mikephil.charting.data.Entry;
+import com.weatherstation.databinding.ActivityKelembapanBinding;
+import com.weatherstation.databinding.ActivitySuhuBinding;
+
+import java.util.ArrayList;
+
 public class KelembapanActivity extends AppCompatActivity {
-    private ImageView btn_bck2;
+
+    private ActivityKelembapanBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kelembapan);
+        binding = ActivityKelembapanBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
 
-        btn_bck2 = findViewById(R.id.btn_bck2);
+        binding.btnBck2.setOnClickListener(view1 -> onBackPressed());
 
-        btn_bck2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(KelembapanActivity.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+        ArrayList<Entry> values = new ArrayList<>();
+        values.add(new Entry(1F, 5F));
+        values.add(new Entry(2F, 6F));
+        values.add(new Entry(3F, 3F));
+        values.add(new Entry(4F, 6F));
+        values.add(new Entry(5F, 9F));
+        values.add(new Entry(6F, 10F));
+        values.add(new Entry(7F, 5F));
+        values.add(new Entry(8F, 7F));
+        values.add(new Entry(9F, 8F));
+        values.add(new Entry(10F, 9F));
+        values.add(new Entry(11F, 5F));
+        values.add(new Entry(12F, 3F));
+
+        ShowChart chart = new ShowChart();
+        chart.chart(binding.chartHum, values, 0, 15);
 
     }
 }
