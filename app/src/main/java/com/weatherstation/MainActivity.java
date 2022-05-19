@@ -46,10 +46,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 DataRealtime data = snapshot.getValue(DataRealtime.class);
-                arah.setText("" + data.arahAngin);
-                temp.setText("" + data.temperature);
-                hum.setText("" + data.kelembapan);
-                wind.setText("" + data.kecepatanAngin);
+                arah.setText(data.arahAngin + "\u00B0");
+                temp.setText(data.temperature + "\u2103");
+                hum.setText(data.kelembapan + "\u0025");
+                wind.setText(data.kecepatanAngin + "m/s");
             }
 
             @Override
