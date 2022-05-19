@@ -29,33 +29,13 @@ public class MainActivity extends AppCompatActivity {
         btn_arah = findViewById(R.id.btn_arah);
 
 
-        btn_suhu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), SuhuActivity.class));
-            }
-        });
+        btn_suhu.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), SuhuActivity.class)));
 
-        btn_kelembapan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), KelembapanActivity.class));
-            }
-        });
+        btn_kelembapan.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), KelembapanActivity.class)));
 
-        btn_kecepatan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), kecepatan_angin.class));
-            }
-        });
+        btn_kecepatan.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), kecepatan_angin.class)));
 
-        btn_arah.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), ArahAnginActivity.class));
-            }
-        });
+        btn_arah.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), ArahAnginActivity.class)));
 
     }
     public void ClickMenu(View view){
@@ -115,21 +95,12 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
         builder.setTitle("Logout");
         builder.setMessage("Are you sure you want to logout ?");
-        builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int which) {
-                activity.finishAffinity();
-                System.exit(0);
-            }
+        builder.setPositiveButton("YES", (dialogInterface, which) -> {
+            activity.finishAffinity();
+            System.exit(0);
         });
 
-        builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-
-            }
-        });
+        builder.setNegativeButton("NO", (dialog, which) -> dialog.dismiss());
 
         builder.show();
     }

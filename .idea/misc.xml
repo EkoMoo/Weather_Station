@@ -3,8 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/Weather_Station/app/src/main/res/layout/activity_arah_angin.xml" value="0.3151041666666667" />
+        <entry key="..\:/AndroidStudioProjects/Weather_Station/app/src/main/res/layout/activity_kecepatan_angin.xml" value="0.3151041666666667" />
+        <entry key="..\:/AndroidStudioProjects/Weather_Station/app/src/main/res/layout/activity_kelembapan.xml" value="0.3151041666666667" />
+        <entry key="..\:/AndroidStudioProjects/Weather_Station/app/src/main/res/layout/activity_main.xml" value="0.3151041666666667" />
+        <entry key="..\:/AndroidStudioProjects/Weather_Station/app/src/main/res/layout/activity_splash_screen.xml" value="0.3151041666666667" />
         <entry key="..\:/AndroidStudioProjects/Weather_Station/app/src/main/res/layout/activity_suhu.xml" value="0.3151041666666667" />
         <entry key="..\:/AndroidStudioProjects/Weather_Station/app/src/main/res/layout/activity_tentang.xml" value="0.3151041666666667" />
+        <entry key="..\:/AndroidStudioProjects/Weather_Station/app/src/main/res/layout/main_nav_drawer.xml" value="0.3151041666666667" />
+        <entry key="..\:/AndroidStudioProjects/Weather_Station/app/src/main/res/layout/main_toolbar.xml" value="0.3151041666666667" />
         <entry key="..\:/Users/eko/AndroidStudioProjects/WeatherStation/app/src/main/res/drawable/bg_button.xml" value="0.128" />
         <entry key="..\:/Users/eko/AndroidStudioProjects/WeatherStation/app/src/main/res/layout/activity_arah_angin.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/eko/AndroidStudioProjects/WeatherStation/app/src/main/res/layout/activity_kecepatan_angin.xml" value="0.1" />
