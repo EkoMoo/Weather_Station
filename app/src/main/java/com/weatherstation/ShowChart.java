@@ -10,9 +10,6 @@ import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 
 import java.util.ArrayList;
 
-/**
- * Created by RadenMas on 24/04/2022.
- */
 public class ShowChart {
 
     public void chart(LineChart lineChart, ArrayList<Entry> values, int min, int max){

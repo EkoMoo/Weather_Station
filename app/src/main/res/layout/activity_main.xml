@@ -48,9 +48,12 @@
 
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="460dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_below="@+id/wt"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
                 android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:orientation="vertical">
@@ -80,18 +83,18 @@
                             <ImageView
                                 android:layout_width="60dp"
                                 android:layout_height="80dp"
-                                android:src="@drawable/suhu"
-                                android:layout_marginBottom="10dp"/>
+                                android:layout_marginBottom="10dp"
+                                android:src="@drawable/suhu" />
 
 
-                                <TextView
-                                    android:id="@+id/Dsuhu"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:text="12"
-                                    android:textSize="35sp"
-                                    android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/Dsuhu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text=""
+                                android:textSize="35sp"
+                                android:textStyle="bold" />
 
                         </LinearLayout>
 
@@ -116,8 +119,8 @@
                             <ImageView
                                 android:layout_width="60dp"
                                 android:layout_height="80dp"
-                                android:src="@drawable/kelembapan"
-                                android:layout_marginBottom="10dp"/>
+                                android:layout_marginBottom="10dp"
+                                android:src="@drawable/kelembapan" />
 
 
                             <TextView
@@ -125,7 +128,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:text="12"
+                                android:text=""
                                 android:textSize="35sp"
                                 android:textStyle="bold" />
 
@@ -135,41 +138,6 @@
                     </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
-
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"/>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="80dp"
-                        android:layout_height="30dp"
-                        android:text="SUHU"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:textColor="#0C0CFE"
-                        android:gravity="center"
-                        android:layout_marginStart="70dp"/>
-
-                    <TextView
-                        android:layout_width="160dp"
-                        android:layout_height="30dp"
-                        android:text="KELEMBAPAN"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:textColor="#0C0CFE"
-                        android:gravity="center"
-                        android:layout_marginStart="70dp"/>
-
-                </LinearLayout>
-
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"/>
 
                 <LinearLayout
                     android:layout_width="370dp"
@@ -196,19 +164,19 @@
                             <ImageView
                                 android:layout_width="60dp"
                                 android:layout_height="80dp"
-                                android:src="@drawable/angin1"
                                 android:layout_marginBottom="10dp"
+                                android:src="@drawable/angin1"
                                 tools:ignore="ContentDescription" />
 
 
-                                <TextView
-                                    android:id="@+id/Dkecepatan"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:text="12"
-                                    android:textSize="35sp"
-                                    android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/Dkecepatan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text=""
+                                android:textSize="35sp"
+                                android:textStyle="bold" />
 
 
                         </LinearLayout>
@@ -235,53 +203,23 @@
                                 android:layout_width="60dp"
                                 android:layout_height="80dp"
                                 android:layout_marginBottom="10dp"
-                                android:src="@drawable/angin2" />
+                                android:src="@drawable/angin2"
+                                tools:ignore="ContentDescription" />
 
-                                <TextView
-                                    android:id="@+id/Darah"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:text="12"
-                                    android:textSize="35sp"
-                                    android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/Darah"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text=""
+                                android:textSize="35sp"
+                                android:textStyle="bold" />
 
 
                         </LinearLayout>
 
                     </androidx.cardview.widget.CardView>
-
-                </LinearLayout>
-
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"/>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="200dp"
-                        android:layout_height="30dp"
-                        android:text="KECEPATAN ANGIN"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:textColor="#0C0CFE"
-                        android:gravity="center"
-                        android:layout_marginLeft="13dp" />
-
-                    <TextView
-                        android:layout_width="150dp"
-                        android:layout_height="30dp"
-                        android:text="ARAH ANGIN"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:textColor="#0C0CFE"
-                        android:layout_marginStart="14dp"
-                        android:gravity="center"
-                        tools:ignore="HardcodedText" />
 
                 </LinearLayout>
 
