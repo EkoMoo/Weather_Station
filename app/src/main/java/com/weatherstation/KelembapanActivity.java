@@ -53,6 +53,5 @@ public class KelembapanActivity extends AppCompatActivity {
 
             }
         });
-
     }
 }

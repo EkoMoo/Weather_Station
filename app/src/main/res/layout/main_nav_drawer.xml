@@ -9,193 +9,189 @@
         android:layout_height="120dp"
         android:layout_marginTop="70dp"
         android:onClick="ClickLogo"
-        android:src="@drawable/logo_app"/>
+        android:src="@drawable/logo_app" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="WEATHER STATION"
-        android:textSize="20sp"
-        android:textStyle="bold"
         android:layout_marginTop="20dp"
+        android:text="@string/app_name"
         android:textAlignment="center"
-        android:textColor="#0C0CFE"/>
+        android:textAllCaps="true"
+        android:textColor="#0C0CFE"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:background="@color/white"/>
+        android:background="@color/white" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="ClickSuhu">
+        android:onClick="ClickSuhu"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
             android:layout_weight="1"
-            android:text="Suhu Udara"
-            android:textSize="20dp"
-            android:textStyle="bold"
             android:padding="12dp"
+            android:text="@string/suhu_udara"
             android:textColor="#0C0CFE"
-            android:layout_marginStart="20dp"/>
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginEnd="48dp"
             android:layout_gravity="center"
-            android:src="@drawable/suhu"/>
+            android:layout_marginEnd="48dp"
+            android:src="@drawable/suhu" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:onClick="ClickKelembapan">
+        android:onClick="ClickKelembapan"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
             android:layout_weight="1"
-            android:text="Kelembapan Udara"
-            android:textSize="20dp"
             android:padding="12dp"
-            android:textStyle="bold"
+            android:text="@string/kelembapan_udara"
             android:textColor="#0C0CFE"
-            android:layout_marginStart="20dp"/>
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginEnd="48dp"
             android:layout_gravity="center"
-            android:src="@drawable/kelembapan"/>
+            android:layout_marginEnd="48dp"
+            android:src="@drawable/kelembapan" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_gravity="center_vertical"
-        android:onClick="ClickKecepatanAngin">
+        android:onClick="ClickKecepatanAngin"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
             android:layout_weight="1"
-            android:text="Kecepatan Angin"
             android:padding="12dp"
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:text="@string/kecepatan_angin"
             android:textColor="#0C0CFE"
-            android:layout_marginStart="20dp"/>
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginEnd="48dp"
             android:layout_gravity="center"
-            android:src="@drawable/angin1"/>
+            android:layout_marginEnd="48dp"
+            android:src="@drawable/angin1" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_gravity="center_vertical"
-        android:onClick="ClickArahAngin">
+        android:onClick="ClickArahAngin"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
             android:layout_weight="1"
-            android:text="Arah Angin"
             android:padding="12dp"
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:text="@string/arah_angin"
             android:textColor="#0C0CFE"
-            android:layout_marginStart="20dp"/>
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginEnd="48dp"
             android:layout_gravity="center"
-            android:src="@drawable/angin2"/>
+            android:layout_marginEnd="48dp"
+            android:src="@drawable/angin2" />
 
     </LinearLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:background="@color/white"/>
+        android:background="@color/white" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_gravity="center_vertical"
-        android:onClick="ClickTentang">
+        android:onClick="ClickTentang"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
             android:layout_weight="1"
-            android:text="Tentang"
             android:padding="12dp"
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:text="@string/about"
             android:textColor="#0C0CFE"
-            android:layout_marginStart="20dp"/>
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginEnd="48dp"
             android:layout_gravity="center"
-            android:src="@drawable/info"/>
+            android:layout_marginEnd="48dp"
+            android:src="@drawable/info" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_gravity="center_vertical"
-        android:onClick="ClickLogout">
+        android:onClick="ClickLogout"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
             android:layout_weight="1"
-            android:text="Keluar"
             android:padding="12dp"
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:text="@string/exit"
             android:textColor="#0C0CFE"
-            android:layout_marginStart="20dp"/>
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginEnd="48dp"
             android:layout_gravity="center"
-            android:src="@drawable/logout"/>
-
+            android:layout_marginEnd="48dp"
+            android:src="@drawable/logout" />
     </LinearLayout>
-
-
-
-
 </LinearLayout>

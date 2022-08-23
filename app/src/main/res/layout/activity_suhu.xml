@@ -33,7 +33,8 @@
         android:layout_below="@+id/D_suhu"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:text="SUHU UDARA"
+        android:text="@string/suhu_udara"
+        android:textAllCaps="true"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -52,8 +53,5 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
-        android:background="@drawable/button"
-        android:contentDescription="TODO" />
-
-
+        android:background="@drawable/button" />
 </RelativeLayout>

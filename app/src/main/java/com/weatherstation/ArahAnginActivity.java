@@ -22,7 +22,6 @@ public class ArahAnginActivity extends AppCompatActivity {
 
     private ActivityArahAnginBinding binding;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,7 +53,5 @@ public class ArahAnginActivity extends AppCompatActivity {
 
             }
         });
-
-
     }
 }

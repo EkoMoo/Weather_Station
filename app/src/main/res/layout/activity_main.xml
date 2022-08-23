@@ -5,236 +5,213 @@
     android:id="@+id/drawerlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:fitsSystemWindows="true"
     tools:context=".MainActivity"
-    android:background="@drawable/background"
     tools:openDrawer="start">
 
-        <RelativeLayout
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/logo"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="230dp"
+            android:layout_marginTop="45dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="230dp"
+                android:src="@drawable/logo_app" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/logo"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="280dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textAllCaps="true"
+                android:textColor="#0C0CFE"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <LinearLayout
-                android:id="@+id/logo"
-                android:layout_width="match_parent"
-                android:layout_height="230dp"
-                android:layout_marginTop="45dp"
+                android:id="@+id/Layout1"
+                android:layout_width="370dp"
+                android:layout_height="190dp"
                 android:gravity="center">
 
-                <ImageView
-                    android:layout_width="130dp"
-                    android:layout_height="230dp"
-                    android:src="@drawable/logo_app" />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardSuhu"
+                    android:layout_width="150dp"
+                    android:layout_height="165dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="6dp">
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="80dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/suhu" />
+
+                        <TextView
+                            android:id="@+id/Dsuhu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=""
+                            android:textSize="35sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardKelembapan"
+                    android:layout_width="150dp"
+                    android:layout_height="165dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="80dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/kelembapan" />
+
+                        <TextView
+                            android:id="@+id/Dkelembapan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=""
+                            android:textSize="35sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/wt"
-                android:layout_below="@+id/logo"
-                android:layout_width="match_parent"
-                android:gravity="center_horizontal"
-                android:layout_height="40dp">
+                android:layout_width="370dp"
+                android:layout_height="190dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center">
 
-                <TextView
-                    android:layout_width="280dp"
-                    android:layout_height="30dp"
-                    android:gravity="center"
-                    android:text="WEATHER STATION"
-                    android:textSize="23sp"
-                    android:textStyle="bold"
-                    android:textColor="#0C0CFE" />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardKecepatan"
+                    android:layout_width="150dp"
+                    android:layout_height="165dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="6dp">
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="80dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/angin1"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/Dkecepatan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=""
+                            android:textSize="35sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardArah"
+                    android:layout_width="150dp"
+                    android:layout_height="165dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="80dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/angin2"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/Darah"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=""
+                            android:textSize="35sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
             </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/wt"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="30dp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:id="@+id/Layout1"
-                    android:layout_width="370dp"
-                    android:layout_height="190dp"
-                    android:gravity="center">
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/btn_suhu"
-                        android:layout_width="150dp"
-                        android:layout_height="165dp"
-                        android:layout_gravity="center"
-                        android:layout_margin="20dp"
-                        app:cardCornerRadius="15dp"
-                        app:cardElevation="6dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:orientation="vertical"
-                            tools:ignore="UseCompoundDrawables">
-
-                            <ImageView
-                                android:layout_width="60dp"
-                                android:layout_height="80dp"
-                                android:layout_marginBottom="10dp"
-                                android:src="@drawable/suhu" />
-
-
-                            <TextView
-                                android:id="@+id/Dsuhu"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:text=""
-                                android:textSize="35sp"
-                                android:textStyle="bold" />
-
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/btn_kelembapan"
-                        android:layout_width="150dp"
-                        android:layout_height="165dp"
-                        android:layout_gravity="center"
-                        android:layout_margin="20dp"
-                        app:cardCornerRadius="15dp"
-                        app:cardElevation="6dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:orientation="vertical"
-                            tools:ignore="UseCompoundDrawables">
-
-                            <ImageView
-                                android:layout_width="60dp"
-                                android:layout_height="80dp"
-                                android:layout_marginBottom="10dp"
-                                android:src="@drawable/kelembapan" />
-
-
-                            <TextView
-                                android:id="@+id/Dkelembapan"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:text=""
-                                android:textSize="35sp"
-                                android:textStyle="bold" />
-
-
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="370dp"
-                    android:layout_height="190dp"
-                    android:layout_marginTop="0dp"
-                    android:gravity="center">
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/btn_kecepatan"
-                        android:layout_width="150dp"
-                        android:layout_height="165dp"
-                        android:layout_gravity="center"
-                        android:layout_margin="20dp"
-                        app:cardCornerRadius="15dp"
-                        app:cardElevation="6dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:orientation="vertical"
-                            tools:ignore="UseCompoundDrawables">
-
-                            <ImageView
-                                android:layout_width="60dp"
-                                android:layout_height="80dp"
-                                android:layout_marginBottom="10dp"
-                                android:src="@drawable/angin1"
-                                tools:ignore="ContentDescription" />
-
-
-                            <TextView
-                                android:id="@+id/Dkecepatan"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:text=""
-                                android:textSize="35sp"
-                                android:textStyle="bold" />
-
-
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/btn_arah"
-                        android:layout_width="150dp"
-                        android:layout_height="165dp"
-                        android:layout_gravity="center"
-                        android:layout_margin="20dp"
-                        app:cardCornerRadius="15dp"
-                        app:cardElevation="6dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:orientation="vertical"
-                            tools:ignore="UseCompoundDrawables">
-
-                            <ImageView
-                                android:layout_width="60dp"
-                                android:layout_height="80dp"
-                                android:layout_marginBottom="10dp"
-                                android:src="@drawable/angin2"
-                                tools:ignore="ContentDescription" />
-
-
-                            <TextView
-                                android:id="@+id/Darah"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:text=""
-                                android:textSize="35sp"
-                                android:textStyle="bold" />
-
-
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <include
-            layout="@layout/main_toolbar"/>
-
+        <include layout="@layout/main_toolbar" />
     </LinearLayout>
 
     <LinearLayout
@@ -243,10 +220,7 @@
         android:layout_gravity="start"
         android:background="@color/white">
 
-        <include
-            layout="@layout/main_nav_drawer"/>
-
+        <include layout="@layout/main_nav_drawer" />
     </LinearLayout>
-
 
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -7,34 +7,33 @@
     android:background="@drawable/background"
     tools:context=".KecepatanAnginActivity">
 
-
     <androidx.cardview.widget.CardView
         android:id="@+id/D_angin1"
         android:layout_width="120dp"
         android:layout_height="150dp"
-        app:cardCornerRadius="15dp"
-        app:cardElevation="6dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="6dp">
 
         <ImageView
             android:layout_width="70dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/angin1"
-            android:layout_gravity="center"/>
-
+            android:layout_gravity="center"
+            android:src="@drawable/angin1" />
     </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/title_WindSpeed"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:text="KECEPATAN ANGIN"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:gravity="center"
+        android:layout_below="@+id/D_angin1"
         android:layout_marginTop="10dp"
-        android:layout_below="@+id/D_angin1"/>
+        android:gravity="center"
+        android:text="@string/kecepatan_angin"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <com.github.mikephil.charting.charts.LineChart
         android:id="@+id/chartWindS"
@@ -51,9 +50,5 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
-        android:background="@drawable/button"
-        android:contentDescription="TODO" />/>
-
-
-
+        android:background="@drawable/button" />
 </RelativeLayout>

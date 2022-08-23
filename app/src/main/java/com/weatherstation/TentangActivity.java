@@ -11,7 +11,6 @@ import com.weatherstation.databinding.ActivitySuhuBinding;
 import com.weatherstation.databinding.ActivityTentangBinding;
 
 public class TentangActivity extends AppCompatActivity {
-    private ImageView btn_bck5;
 
     private ActivityTentangBinding binding;
 

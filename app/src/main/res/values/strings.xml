@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Weather Station</string>
+    <string name="desc_app">Aplikasi Weather Station merupakan aplikasi yang digunakan untuk pemantauan cuaca, dalam aplikasi ini mendeteksi 4 jenis kondisi yaitu suhu udara, kelembapan udara, kecepatan angin dan arah angin. data dari kondisi tersebut bertujuan untuk mengetahui kondisi cuaca di suatu wilayah.</string>
+    <string name="eko_prasetyo">EKO PRASETYO</string>
+    <string name="nim">1629040058</string>
+    <string name="arah_angin">Arah Angin</string>
+    <string name="kecepatan_angin">Kecepatan Angin</string>
+    <string name="kelembapan_udara">Kelembapan Udara</string>
+    <string name="suhu_udara">Suhu Udara</string>
+    <string name="about">Tentang</string>
+    <string name="exit">Keluar</string>
 </resources>
