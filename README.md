@@ -2,7 +2,7 @@
 ![stasiun cuaca](https://user-images.githubusercontent.com/98507357/187048247-eb1b5fed-0444-41c6-8dd6-c16f3e5ac199.JPG)
 # sensor coding 
 
-stasiun cuaca
+# stasiun cuaca
 
 #include "DHT.h"
 #include <WiFi.h>
@@ -15,8 +15,8 @@ DHT dht(DHTPIN, DHTTYPE);
 #define WIFI_SSID "Cafe Ngoding"
 #define WIFI_PASSWORD "2023punyaPT"
 
-#define host "https://weather-station-47dd6-default-rtdb.asia-southeast1.firebasedatabase.app/"
-#define key "IdA4uYDvz2d5FO2RTV5dITiTNeoarDtHmt5L9kPL"
+#define host "..."
+#define key "..."
 
 FirebaseData fbdo;
 FirebaseJson jsonRealtime, jsonChart;
